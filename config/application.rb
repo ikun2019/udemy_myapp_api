@@ -33,6 +33,9 @@ module App
     config.active_record.default_timezone = :utc
     # config.eager_load_paths << Rails.root.join("extras")
 
+    config.i18n.default_locale = :ja
+    config.add_autoload_paths_to_load_path = false
+
     # Only loads a smaller set of middleware suitable for API only apps.
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
