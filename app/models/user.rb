@@ -13,7 +13,8 @@ class User < ApplicationRecord
                                 allow_blank: true
                             },
                             format: {
-                            with: VALID_PASSWORD_REGEX
+                            with: VALID_PASSWORD_REGEX,
+                            allow_blank: true
                             },
                             allow_nil: true
 end
